@@ -2,11 +2,15 @@
 
 This repo contains code in R that takes as input a modified enron dataset with the following columns:
 
-time -  Unix time in milliseconds
-message identifier
-sender
-recipients - pipe-separated list of email recipients
-mode - always "email"
+1. time -  Unix time in milliseconds
+
+2. message identifier
+
+3. sender
+
+4. recipients - pipe-separated list of email recipients
+
+5. mode - always "email"
 
 And produces:
 
@@ -19,3 +23,6 @@ And produces:
 
 3. A visualization that shows, for the people in (1), the number of unique
    people/email addresses who contacted them over the same time period. 
+
+The code can be run by invoking the following from the commandline:
+Rscript summarize-enron.R enron-event-history-all.csv
